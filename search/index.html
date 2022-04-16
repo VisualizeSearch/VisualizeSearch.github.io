@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Visualize - Feature</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="/css/normalize.css">
+  <link rel="stylesheet" href="/css/skeleton.css">
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="/images/icon.png">
+
+  <!-- JS
+  -------------------------------------------------- -->
+  <script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <nav>
+    <ul>
+      <li><a href="/"><img src="/images/icon.png" alt="" width="10%"></a></li>
+      <li><a href="/">Home</a></li>
+      <li><a href="/faq">FAQ</a></li>
+      <li class="li-primary"><a href="/search">Search</a></li>
+      <li><a href="/feature">Feature</a></li>
+    </ul>
+  </nav>
+    <div class="container centre">
+        <h1>Search any studio!</h1>
+        <input type="text" name="search" id="search">
+        <input type="button" value="enter" class="button-primary" id="enter">
+        <div id="results" class="invisible row five-margin">
+            <div class="one-third column">
+                <h3 id="title"></h3>
+                <img class="studio-image" id="image" src="" alt="">
+                <p class="studio-description" id="description"></p>
+            </div>
+            <div class="two-thirds column">
+                <h1>Followers</h1>
+                <table class="studio-table">
+                    <thead>
+                        <tr>
+                            <th>Stat</th>
+                            <th>Number</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Followers</td>
+                            <td id="followers"></td
+                        </tr>
+                        <tr>
+                            <td>Projects</td>
+                            <td id="projects"></td>
+                        </tr>
+                        <tr>
+                            <td>Comments</td>
+                            <td id="comments"></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <small>If any of these Stats are 100 it's wrong because Scratch displays stuff incorrectly</small>
+                <h3>Latest Comment</h3>
+                <div class="comment row left">
+                    <img id="pfp-image" class="one-third column" src="" alt="">
+                    <div class="two-thirds column">
+                        <h3 id="username"></h3>
+                        <p id="content"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/js/search.js"></script>
+</body>
+</html>
