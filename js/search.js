@@ -13,7 +13,7 @@ $(document).ready(function() {
 
 function callapi() {
     const input = document.getElementById('search').value;
-    fetch('https://api.allorigins.win/raw?url=https://api.scratch.mit.edu/studios/' + input)
+    fetch('https://corsproxy.chiroyce.repl.co/proxy?url=https://api.scratch.mit.edu/studios/' + input)
         .then(res => res.json())
         .then(data => {
             if (data.error) {
@@ -29,7 +29,7 @@ function callapi() {
             document.getElementById("comments").innerText = data.stats.comments
 
         });
-    fetch('https://api.allorigins.win/raw?url=https://api.scratch.mit.edu/studios/' + input + '/comments')
+    fetch('https://corsproxy.chiroyce.repl.co/proxy?url=https://api.scratch.mit.edu/studios/' + input + '/comments')
         .then(res => res.json())
         .then(data => {
             document.getElementById("content").innerText = data[0].content;
