@@ -172,6 +172,16 @@ p {
 
 .left {
   text-align: left; }
+
+::placeholder {
+  color: #bbb;
+  opacity: 1; }
+
+:-ms-input-placeholder {
+  color: #bbb; }
+
+::-ms-input-placeholder {
+  color: #bbb; }
 /* Links
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 a {
@@ -260,7 +270,8 @@ select {
   border: 1px solid #D1D1D1;
   border-radius: 10px;
   box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  color: #333; }
 /* Removes awkward default styles on some inputs for iOS */
 input[type="email"],
 input[type="number"],
