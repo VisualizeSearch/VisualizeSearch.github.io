@@ -36,4 +36,11 @@ function callapi() {
             document.getElementById("username").innerText = data[0].author.username;
             document.getElementById("pfp-image").src = data[0].author.image;
         });  
+    fetch('https://corsproxy.chiroyce.repl.co/proxy?url=https://api.scratch.mit.edu/studios/' + input + '/projects')
+        .then(res => res.json())
+        .then(data => {
+            document.getElementById("project-title").innerText = data[0].title;
+            document.getElementById("project-user").innerText = data[0].username;
+            document.getElementById("project-img").src = data[0].image;
+        });  
     }

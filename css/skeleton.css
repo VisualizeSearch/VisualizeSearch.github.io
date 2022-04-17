@@ -374,18 +374,27 @@ nav {
 /* Studio
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .studio-image {
-  border-radius: 1em;
   margin: 1em 0;
   width: 100%;
+  background: rgba( 255, 255, 255, 0.25 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 10px );
+  -webkit-backdrop-filter: blur( 10px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
 
 .studio-description {
-  border-radius: 1em;
   padding: 1em;
-  background-color: #bae6fd;
   height: 20em;
   overflow-y: scroll;
   font-size: 2rem;
+  background: rgba( 255, 255, 255, 0.25 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 10px );
+  -webkit-backdrop-filter: blur( 10px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
 
 .studio-table {
@@ -393,14 +402,38 @@ nav {
 }
 
 .comment {
-  border-radius: 1em;
-  background-color: #bae6fd;
   padding: 1em;
+  background: rgba( 255, 255, 255, 0.25 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 10px );
+  -webkit-backdrop-filter: blur( 10px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+  margin-bottom: 1em;
 }
 
 #pfp-image {
   border-radius: 0.5em;
 }
+
+.project {
+  background: rgba( 255, 255, 255, 0.25 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 10px );
+  -webkit-backdrop-filter: blur( 10px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+  padding: 1em;
+  margin: 0;
+}
+
+#project-img {
+  border-radius: 0.5em;
+  width: 100%;
+  height: auto;
+}
+
+
 
 /* Code
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
